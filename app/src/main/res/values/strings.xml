@@ -29,4 +29,14 @@
     <string name="new_pass" translatable="false">New Password</string>
     <string name="confirm_new_pass" translatable="false">Confirm New Password</string>
 
+    <!--  Error Strings  -->
+    <string name="err_email">Invalid Email Format</string>
+    <string name="err_password">Password must contain at least one lowercase letter.\n
+        Password must contain at least one uppercase letter.\n
+        Password must contain at least one number.\n
+        Password must contain at least one special character.\n
+        Password must be at least 8 characters long.
+    </string>
+    <string name="err_password_confirmation">Passwords do not match</string>
+
 </resources>
