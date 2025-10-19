@@ -22,12 +22,16 @@
 
     <!--  Forgot Password Activity Strings  -->
     <string name="email_input" translatable="false">Enter Your Email</string>
-    <string name="reset_link" translatable="false">Send Reset Link</string>
+    <string name="reset_otp" translatable="false">Send Reset OTP</string>
 
     <!--  Reset Password Activity Strings  -->
     <string name="reset_pass" translatable="false">Reset Password</string>
     <string name="new_pass" translatable="false">New Password</string>
     <string name="confirm_new_pass" translatable="false">Confirm New Password</string>
+
+    <!--  Reset OTP Activity Strings  -->
+    <string name="enter_otp" translatable="false">Enter OTP</string>
+    <string name="verify_otp" translatable="false">Verify OTP</string>
 
     <!--  Error Strings  -->
     <string name="err_email">Invalid Email Format</string>
@@ -38,5 +42,9 @@
         Password must be at least 8 characters long.
     </string>
     <string name="err_password_confirmation">Passwords do not match</string>
+
+    <!--  Sender Credentials (set securely)  -->
+    <string name="sender_email">testingather@gmail.com</string>
+    <string name="sender_password">ouvhgernfjgzhihc</string>
 
 </resources>

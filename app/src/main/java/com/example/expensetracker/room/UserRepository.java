@@ -21,6 +21,7 @@ public class UserRepository {
         void onResult(User user);
     }
 
+
     public UserRepository(Context context) {
         db = AppDatabase.getInstance(context);
     }
@@ -44,5 +45,9 @@ public class UserRepository {
             User user = db.userDao().findByEmail(email);
             if (callback != null) callback.onResult(user);
         });
+    }
+
+    public void updatePasswordAsync(String email, String password) {
+        executor.execute(() -> db.userDao().updatePassword(email, password));
     }
 }

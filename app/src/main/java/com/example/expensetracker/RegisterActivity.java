@@ -43,11 +43,15 @@ public class RegisterActivity extends AppCompatActivity
         Button registerBtn = findViewById(R.id.registerBtn);
         registerBtn.setOnClickListener(v ->
         {
+            // Form Validation
+            if(!validator.validate())
+            {
+                return;
+            }
+
+            // Input Fields
             String email = emailInput.getText().toString().trim();
             String password = passwordInput.getText().toString();
-
-            // Form Validation
-            validator.validate();
 
             // Check if email already exists
             userRepository.findByEmailAsync(email, existingUser ->

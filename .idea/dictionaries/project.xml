@@ -2,9 +2,13 @@
   <dictionary name="project">
     <words>
       <w>activty</w>
+      <w>ather</w>
+      <w>connectiontimeout</w>
+      <w>expensetracker</w>
       <w>hellobutton</w>
       <w>hellotext</w>
       <w>noacc</w>
+      <w>writetimeout</w>
     </words>
   </dictionary>
 </component>
