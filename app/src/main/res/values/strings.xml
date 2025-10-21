@@ -1,20 +1,26 @@
 <resources>
     <string name="app_name">Expense Tracker</string>
+
+    <!--  Main Strings  -->
     <string name="hellotext">Hello World</string>
     <string name="hellobutton">Hello! I am a Button</string>
 
     <!--  PlaceHolders Strings  -->
-    <string name="hint_email" translatable="false">Email</string>
-    <string name="hint_pass" translatable="false">Password</string>
-    <string name="hint_forgot_pass" translatable="false">Forgot Password</string>
+    <string name="label_email" translatable="false">Email</string>
+    <string name="label_pass" translatable="false">Password</string>
+    <string name="label_forgot_pass" translatable="false">Forgot Password</string>
+    <string name="hint_email" translatable="false">Enter Email</string>
+    <string name="hint_pass" translatable="false">Enter Password</string>
 
     <!--  Splash Activity Strings  -->
     <string name="description" translatable="false">Expense Tracker Logo</string>
 
     <!--  Login Activity Strings  -->
-    <string name="login" translatable="false">Login</string>
+    <string name="login_title" translatable="false">Login</string>
+    <string name="login" translatable="false">Log In</string>
     <string name="forgot_pass" translatable="false">Forgot Password?</string>
-    <string name="no_acc_register" translatable="false">No account? Register</string>
+    <string name="no_acc" translatable="false">Don’t have an account?</string>
+    <string name="signup" translatable="false"> Sign Up</string>
 
     <!--  Register Activity Strings  -->
     <string name="register" translatable="false">Register</string>
