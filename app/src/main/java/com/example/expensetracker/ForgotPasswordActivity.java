@@ -6,8 +6,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -16,6 +14,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.example.expensetracker.libs.EmailSender;
 import com.example.expensetracker.room.UserRepository;
 
 import java.util.Locale;
@@ -102,11 +101,8 @@ public class ForgotPasswordActivity extends AppCompatActivity
                                         startActivity(reset);
                                     });
                                 } catch (Exception e) {
-                                    // Build a readable error message including nested causes
-                                    final String errMsg = extractExceptionMessage(e);
-                                    Log.e(TAG, "Failed to send OTP", e);
                                     runOnUiThread(() -> {
-                                        Toast.makeText(ForgotPasswordActivity.this, "Failed to send OTP: " + errMsg, Toast.LENGTH_LONG).show();
+                                        Toast.makeText(ForgotPasswordActivity.this, "Failed to send OTP", Toast.LENGTH_LONG).show();
                                         // restore button state
                                         resetLinkBtn.setEnabled(true);
                                         resetLinkBtn.setText("Send Reset Link");
@@ -119,26 +115,5 @@ public class ForgotPasswordActivity extends AppCompatActivity
                         }
                     }));
         });
-
-
-    }
-
-    // Helper to collect exception messages + nested causes for better diagnostics
-    private String extractExceptionMessage(Throwable t) {
-        if (t == null) return "Unknown error";
-        StringBuilder sb = new StringBuilder();
-        Throwable cur = t;
-        int depth = 0;
-        while (cur != null && depth < 5) {
-            String m = cur.getMessage();
-            if (m != null && !m.isEmpty()) {
-                if (sb.length() > 0) sb.append(" -> ");
-                sb.append(m);
-            }
-            cur = cur.getCause();
-            depth++;
-        }
-        if (sb.length() == 0) return t.getClass().getSimpleName();
-        return sb.toString();
     }
 }

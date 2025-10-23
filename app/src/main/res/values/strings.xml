@@ -1,16 +1,13 @@
 <resources>
     <string name="app_name">Expense Tracker</string>
 
-    <!--  Main Strings  -->
-    <string name="hellotext">Hello World</string>
-    <string name="hellobutton">Hello! I am a Button</string>
-
     <!--  PlaceHolders Strings  -->
     <string name="label_email" translatable="false">Email</string>
     <string name="label_pass" translatable="false">Password</string>
     <string name="label_forgot_pass" translatable="false">Forgot Password</string>
     <string name="hint_email" translatable="false">Enter Email</string>
     <string name="hint_pass" translatable="false">Enter Password</string>
+    <string name="hint_otp">*</string>
 
     <!--  Splash Activity Strings  -->
     <string name="description" translatable="false">Expense Tracker Logo</string>
@@ -20,24 +17,26 @@
     <string name="login" translatable="false">Log In</string>
     <string name="forgot_pass" translatable="false">Forgot Password?</string>
     <string name="no_acc" translatable="false">Don’t have an account?</string>
-    <string name="signup" translatable="false"> Sign Up</string>
+    <string name="signup" translatable="false">Sign Up</string>
 
     <!--  Register Activity Strings  -->
-    <string name="register" translatable="false">Register</string>
-    <string name="confirm_pass" translatable="false">Confirm Password</string>
+    <string name="register_title" translatable="false">Register</string>
+    <string name="label_confirm_pass" translatable="false">Confirm Password</string>
+    <string name="hint_pass_again" translatable="false">Enter Password Again</string>
+    <string name="has_acc" translatable="false">Already have an account?</string>
 
     <!--  Forgot Password Activity Strings  -->
-    <string name="email_input" translatable="false">Enter Your Email</string>
-    <string name="reset_otp" translatable="false">Send Reset OTP</string>
+    <string name="send_reset_otp" translatable="false">Send OTP</string>
 
     <!--  Reset Password Activity Strings  -->
-    <string name="reset_pass" translatable="false">Reset Password</string>
+    <string name="reset_pass_title" translatable="false">Reset Password</string>
     <string name="new_pass" translatable="false">New Password</string>
     <string name="confirm_new_pass" translatable="false">Confirm New Password</string>
-
-    <!--  Reset OTP Activity Strings  -->
     <string name="enter_otp" translatable="false">Enter OTP</string>
     <string name="verify_otp" translatable="false">Verify OTP</string>
+    <string name="otp_timer_initial">01:00</string>
+    <string name="otp_timer_finished">00:00</string>
+    <string name="otp_expiry">The OTP will expire in</string>
 
     <!--  Error Strings  -->
     <string name="err_email">Invalid Email Format</string>
@@ -52,5 +51,9 @@
     <!--  Sender Credentials (set securely)  -->
     <string name="sender_email">testingather@gmail.com</string>
     <string name="sender_password">ouvhgernfjgzhihc</string>
+
+    <!--  Main Strings  -->
+    <string name="hellotext">Hello World</string>
+    <string name="hellobutton">Hello! I am a Button</string>
 
 </resources>
