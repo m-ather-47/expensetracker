@@ -35,16 +35,8 @@ android {
         resources {
             // Common files that cause duplicate resource merge errors from different libraries
             excludes += setOf(
-                "META-INF/AL2.0",
-                "META-INF/LGPL2.1",
-                "META-INF/DEPENDENCIES",
-                "META-INF/NOTICE",
-                "META-INF/NOTICE.txt",
                 "META-INF/NOTICE.md",
-                "META-INF/LICENSE",
-                "META-INF/LICENSE.txt",
                 "META-INF/LICENSE.md",
-                "META-INF/*.md"
             )
             // If some files still conflict, pick the first occurrence to avoid build failure
             // pickFirsts can be used for specific known files, example:
