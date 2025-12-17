@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // JitPack is required for MPAndroidChart (hosted on JitPack)
+        maven("https://jitpack.io")
     }
 }
 
 rootProject.name = "expensetracker"
 include(":app")
- 

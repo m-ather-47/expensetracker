@@ -18,7 +18,13 @@
         <activity android:name=".ResetPasswordActivity" android:exported="true"/>
         <activity android:name=".ForgotPasswordActivity" android:exported="true"/>
         <activity android:name=".LoginActivity" android:exported="true"/>
+        <activity android:name=".IncomeActivity" android:exported="true"/>
+        <activity android:name=".AddExpenseActivity" android:exported="true"/>
+        <activity android:name=".ExpenseListActivity" android:exported="true"/>
+        <activity android:name=".SummaryActivity" android:exported="true"/>
+        <activity android:name=".ChartActivity" android:exported="true"/>
         <activity android:name=".MainActivity" android:exported="true"/>
+        <activity android:name=".OptionsActivity" android:exported="true"/>
         <activity android:name=".SplashActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

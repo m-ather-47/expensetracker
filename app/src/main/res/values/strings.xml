@@ -57,4 +57,11 @@
     <string name="hellotext">Hello World</string>
     <string name="hellobutton">Hello! I am a Button</string>
 
+    <!-- Bottom navigation labels -->
+    <string name="nav_expenses">Expense List</string>
+    <string name="nav_summary">Summary Stats</string>
+    <string name="nav_options">Options</string>
+
+    <!-- Accessibility / UI strings -->
+    <string name="delete">Delete</string>
 </resources>

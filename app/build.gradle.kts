@@ -38,9 +38,6 @@ android {
                 "META-INF/NOTICE.md",
                 "META-INF/LICENSE.md",
             )
-            // If some files still conflict, pick the first occurrence to avoid build failure
-            // pickFirsts can be used for specific known files, example:
-            // pickFirsts += setOf("META-INF/whatever.conf")
         }
     }
 }
@@ -52,7 +49,7 @@ dependencies {
     implementation(libs.activity)
     implementation(libs.constraintlayout)
 
-    // Room (added)
+    // Room (already added)
     implementation(libs.room.runtime)
     annotationProcessor(libs.room.compiler)
 
@@ -62,6 +59,9 @@ dependencies {
     // JavaMail (for sending email via SMTP)
     implementation(libs.android.mail)
     implementation(libs.android.activation)
+
+    // MPAndroidChart for charts (use version catalog entry)
+    implementation(libs.mpandroidchart)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
