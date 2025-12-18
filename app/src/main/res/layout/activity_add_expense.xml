@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="26dp"
-    android:layout_marginVertical="20dp">
+    android:layout_marginVertical="20dp"
+    >
 
     <EditText
         android:id="@+id/etAmount"
@@ -14,7 +15,12 @@
         android:hint="Amount"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <Spinner
         android:id="@+id/spCategory"
@@ -23,7 +29,10 @@
         app:layout_constraintTop_toBottomOf="@id/etAmount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="8dp"
+        android:paddingVertical="12dp"
+        />
 
     <EditText
         android:id="@+id/etDate"
@@ -34,7 +43,12 @@
         app:layout_constraintTop_toBottomOf="@id/spCategory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <EditText
         android:id="@+id/etDescription"
@@ -44,7 +58,12 @@
         app:layout_constraintTop_toBottomOf="@id/etDate"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <Button
         android:id="@+id/btnSave"

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="26dp"
-    android:layout_marginVertical="20dp">
+    android:layout_marginVertical="20dp"
+    >
 
     <EditText
         android:id="@+id/etIncomeAmount"
@@ -14,17 +15,28 @@
         android:hint="Amount"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <EditText
         android:id="@+id/etIncomeSource"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Source (e.g., Salary)"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/etIncomeAmount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <EditText
         android:id="@+id/etIncomeDate"
@@ -32,10 +44,16 @@
         android:layout_height="wrap_content"
         android:focusable="false"
         android:hint="Date"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/etIncomeSource"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textColor="#333333"
+        android:textColorHint="#9E9E9E" />
 
     <Button
         android:id="@+id/btnIncomeSave"

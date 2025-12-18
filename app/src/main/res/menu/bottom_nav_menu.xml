@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_expenses"
-        android:icon="@drawable/ic_clock_black_24dp"
+        android:icon="@drawable/expense_icon"
         android:title="@string/nav_expenses" />
     <item
         android:id="@+id/nav_summary"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/stats_icon"
         android:title="@string/nav_summary" />
     <item
         android:id="@+id/nav_options"
