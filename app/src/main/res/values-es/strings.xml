@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestor de Gastos</string>
+
+    <!-- PlaceHolders Strings -->
+    <string name="label_email">Correo electrónico</string>
+    <string name="label_pass">Contraseña</string>
+    <string name="label_forgot_pass">Olvidé mi contraseña</string>
+    <string name="hint_email">Introduce el correo</string>
+    <string name="hint_pass">Introduce la contraseña</string>
+    <string name="hint_otp">*</string>
+
+    <!-- Splash Activity Strings -->
+    <string name="description">Logotipo del Gestor de Gastos</string>
+
+    <!-- Login Activity Strings -->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login">Acceder</string>
+    <string name="forgot_pass">¿Olvidó su contraseña?</string>
+    <string name="no_acc">¿No tienes una cuenta?</string>
+    <string name="signup">Registrarse</string>
+
+    <!-- Register Activity Strings -->
+    <string name="register_title">Registro</string>
+    <string name="label_confirm_pass">Confirmar contraseña</string>
+    <string name="hint_pass_again">Introduce la contraseña de nuevo</string>
+    <string name="has_acc">¿Ya tiene una cuenta?</string>
+
+    <!-- Forgot Password Activity Strings -->
+    <string name="send_reset_otp">Enviar OTP</string>
+
+    <!-- Reset Password Activity Strings -->
+    <string name="reset_pass_title">Restablecer contraseña</string>
+    <string name="new_pass">Nueva contraseña</string>
+    <string name="confirm_new_pass">Confirmar nueva contraseña</string>
+    <string name="enter_otp">Introduce el OTP</string>
+    <string name="verify_otp">Verificar OTP</string>
+    <string name="otp_timer_initial">01:00</string>
+    <string name="otp_timer_finished">00:00</string>
+    <string name="otp_expiry">El OTP expirará en</string>
+
+    <!-- Error Strings -->
+    <string name="err_email">Formato de correo inválido</string>
+    <string name="err_password">La contraseña debe contener al menos una letra minúscula.\nLa contraseña debe contener al menos una letra mayúscula.\nLa contraseña debe contener al menos un número.\nLa contraseña debe contener al menos un carácter especial.\nLa contraseña debe tener al menos 8 caracteres.</string>
+    <string name="err_password_confirmation">Las contraseñas no coinciden</string>
+
+    <!-- Sender Credentials (kept as values) -->
+    <string name="sender_email">testingather@gmail.com</string>
+    <string name="sender_password">ouvhgernfjgzhihc</string>
+
+    <!-- Main Strings -->
+    <string name="hellotext">Hola Mundo</string>
+    <string name="hellobutton">¡Hola! Soy un botón</string>
+
+    <!-- Bottom navigation labels -->
+    <string name="nav_expenses">Lista de Gastos</string>
+    <string name="nav_summary">Resumen</string>
+    <string name="nav_options">Opciones</string>
+
+    <!-- Accessibility / UI strings -->
+    <string name="delete">Eliminar</string>
+
+    <!-- Options screen strings -->
+    <string name="options_title">Opciones</string>
+    <string name="label_language">Idioma</string>
+    <string name="lang_en">Inglés</string>
+    <string name="lang_es">Español</string>
+    <string name="label_theme">Tema</string>
+    <string name="theme_system">Predeterminado del sistema</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_dark">Oscuro</string>
+</resources>
+

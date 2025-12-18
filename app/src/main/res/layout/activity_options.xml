@@ -1,16 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:gravity="center"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvOptionsActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Options Activity (edit me later)"
-        android:textSize="18sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvOptionsActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/options_title"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_language"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_lang_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lang_en" />
+
+            <RadioButton
+                android:id="@+id/rb_lang_es"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lang_es" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_theme"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rb_theme_system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/theme_system" />
+
+            <RadioButton
+                android:id="@+id/rb_theme_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/theme_light" />
+
+            <RadioButton
+                android:id="@+id/rb_theme_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/theme_dark" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

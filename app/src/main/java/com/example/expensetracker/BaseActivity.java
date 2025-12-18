@@ -1,5 +1,6 @@
 package com.example.expensetracker;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,13 +9,32 @@ import android.widget.FrameLayout;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
+    protected void attachBaseContext(Context newBase) {
+        // Wrap base context with selected locale
+        String lang = Settings.getLanguage(newBase);
+        Context ctx = LocaleHelper.wrap(newBase, lang);
+        super.attachBaseContext(ctx);
+    }
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        // Apply saved theme before super.onCreate to ensure it's used during inflation
+        String theme = Settings.getTheme(this);
+        if (Settings.THEME_DARK.equals(theme)) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else if (Settings.THEME_LIGHT.equals(theme)) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
         setupBottomNavigation();
