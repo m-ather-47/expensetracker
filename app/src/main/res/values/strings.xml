@@ -19,6 +19,7 @@
     <string name="forgot_pass" translatable="false">Forgot Password?</string>
     <string name="no_acc" translatable="false">Don’t have an account?</string>
     <string name="signup" translatable="false">Sign Up</string>
+    <string name="madeby" translatable="false">Made by Muhammad Ather ( 23-ARID-547 )</string>
 
     <!--  Register Activity Strings  -->
     <string name="register_title" translatable="false">Register</string>
